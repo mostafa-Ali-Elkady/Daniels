@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/*  Start Global */
+:root {
+  --black: #1c1c1c;
+}
+.mont-font {
+  font-family: "Montserrat", sans-serif;
+}
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+section {
+  padding-block: 100px 70px;
+}
+.grey-section {
+  background-color: #f4f4f4;
+}
+p {
+  color: #748182;
+  font-size: 14px;
+  word-spacing: 2px;
+}
+.section-heading {
+  color: #343434;
+  text-align: center;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+}
+.section-heading::before {
+  content: "";
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  height: 2rem;
+  background-image: url("../imgs/dots.png");
+}
+/*  End Global */
+/* Start Header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  background-size: cover;
+}
+.navbar .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  font-size: 13px;
+}
+header .content h5 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+header .content h1 {
+  font-weight: 300;
+  font-size: 3rem;
+}
+header .content h1 span {
+  font-weight: 500;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+.social-icons .icon-container {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.social-icons .icon-container a {
+  color: #fff !important;
+}
+.social-icons .icon-container:hover {
+  background-color: #fff;
+  color: #000;
+}
+.social-icons .icon-container:hover a {
+  color: #000 !important;
+}
+/* End Header */
+/* Start About */
+.about .image:before {
+  content: "";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  background-image: url("../imgs/dots.png");
+  z-index: -1;
+}
+
+.about .info p:first-of-type {
+  color: #999;
+}
+.about .skills .skill-bar {
+  background-color: #f7f7f7;
+  box-shadow: inset 0px 2px 6px #00000026;
+  border-radius: 5px;
+}
+.about .skills .skill-bar .skill-progress {
+  background-color: var(--black);
+  border-radius: 5px;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.about .skills .skill-bar .skill-progress.first {
+  width: 95%;
+}
+.about .skills .skill-bar .skill-progress.second {
+  width: 80%;
+}
+.about .skills .skill-bar .skill-progress.last {
+  width: 90%;
+}
+.about .info .btns button:first-of-type {
+  font-size: 0.9rem;
+  background-color: var(--black);
+  color: #fff;
+  transition: 0.4s;
+}
+.about .info .btns button:first-of-type:hover {
+  background-color: #fff;
+  color: var(--black);
+}
+.about .info .btns button:last-of-type {
+  font-size: 0.9rem;
+  transition: 0.4s;
+}
+.about .info .btns button:last-of-type:hover {
+  background-color: var(--black);
+  color: #fff;
+}
+/* End About */
+/* Start Services */
+.services .icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.6s;
+  margin: 0px auto 1rem;
+  font-size: 1.5rem;
+}
+.services .icon-container:hover {
+  color: #fff;
+  background-color: var(--black);
+}
+.services .services-item h5 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+/* End Services */
+/* Start portfolio */
+
+/* End portfolio */
+/* Start testi */
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #899797;
+  position: relative;
+  top: 45px;
+  margin: 6px;
+}
+/* End testi */
+/*Start Counter */
+.count-num {
+  font-weight: 800;
+  margin-block: 1rem;
+}
+/*End Counter */
+/* Start team */
+.member-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  transition: 0.6s;
+}
+.memeber-image img {
+  transition: 0.6s;
+}
+.memeber-image:hover .member-overlay {
+  opacity: 1;
+  transform: rotateY(0deg) scale(1, 1);
+}
+.memeber-image:hover img {
+  transform: scale(1.1);
+}
+.member-overlay .icon-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.member-overlay .icon-container a {
+  color: #fff;
+  transition: 0.4s;
+}
+.member-overlay .icon-container:hover {
+  background-color: #fff;
+}
+.member-overlay .icon-container:hover a {
+  color: var(--black);
+}
+.member-info {
+  background-color: #5a5a5a;
+  color: #fff;
+  border-radius: 0px 0px 8px 8px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+/* End team */
+/* Start Contact */
+.contact .content .icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.6s;
+  margin: 0px auto 1rem;
+  font-size: 1.5rem;
+}
+.contact .content .icon-container:hover {
+  color: #fff;
+  background-color: var(--black);
+}
+input.form-control,
+textarea.form-control {
+  background-color: #f4f4f4 !important;
+}
+.submit-btn {
+  border: 1px solid var(--black);
+  background-color: var(--black);
+  color: #fff;
+  margin-top: 1.5rem;
+  margin-right: auto;
+  display: block;
+  transition: 0.5s;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+}
+.submit-btn:hover {
+  background-color: #fff;
+  color: var(--black);
+}
+/* End Contact */
+/* Start footer */
+footer {
+  background-color: var(--black);
+  color:#fff;
+  text-align:center;
+  padding-block:1.6rem;
+}
+/* End footer */

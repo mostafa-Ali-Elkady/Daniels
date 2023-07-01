@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    align-items: center;
+    background-color: #fff;
+    position:relative;
+    z-index:900;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    color: #000 !important;
+    padding-block: 1rem;
+  }
+}
