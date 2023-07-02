@@ -5,6 +5,7 @@
     position: relative;
     z-index: 900;
   }
+
   .navbar-expand-md .navbar-nav .nav-link {
     color: #000 !important;
     padding-block: 1rem;
@@ -19,6 +20,9 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .navbar.scrolled {
+    padding: 20px;
+  }
   .filtering-item {
     padding: 0.5rem 0.8rem;
     font-size: 0.8rem;
