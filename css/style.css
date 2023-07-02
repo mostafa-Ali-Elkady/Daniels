@@ -115,10 +115,10 @@ header {
 .nav-link:hover {
   color: #000;
 }
-.navbar svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+.navbar svg {
   color: #fff;
 }
-.navbar.scrolled svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+.navbar.scrolled svg {
   color: var(--black);
 }
 header .content h5 {
