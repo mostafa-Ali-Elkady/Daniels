@@ -16,7 +16,7 @@ let activated = false;
 window.addEventListener("scroll", () => {
   let nav = document.querySelector("#nav")
 
-  if (window.scrollY > 100) {
+  if (window.scrollY > 500) {
     nav.classList.add('scrolled')
   } else {
     nav.classList.remove('scrolled')
@@ -45,5 +45,53 @@ window.addEventListener("scroll", () => {
   }
 })
 // End Counter
+// light Gallery
+lightGallery(document.getElementById('lightgallery'), {
+  speed: 500,
+  thumbnail: true,
 
+  // ... other settings
+});
+// Portfolio
+let filterListItems = document.querySelectorAll(".filtering .filtering-item"),
+  filtersImages = document.querySelectorAll(".filterd-images a");
 
+filterListItems.forEach((list) => {
+  list.addEventListener("click", () => {
+    document.querySelector(".filtering-item.active").classList.remove("active");
+    list.classList.add("active")
+    let filtedValue = list.dataset.filter;
+    filtersImages.forEach(image => {
+      if (image.classList.contains(filtedValue)) {
+        image.classList.remove("hidden")
+        image.classList.add("active")
+      } else {
+        image.classList.remove("active")
+        image.classList.add("hidden")
+      }
+    })
+  });
+});
+///////////////////////
+// add active class to nav link
+let links = document.querySelectorAll(".nav-link");
+
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    // loop through all links
+    links.forEach((otherLink) => {
+      // check if the link is the clicked link
+      if (otherLink !== link) {
+        // remove the "active" class from other links
+        otherLink.classList.remove("active");
+      }
+    });
+    // add or remove the "active" class from the clicked link
+    if (link.classList.contains("active")) {
+      link.classList.remove("active");
+    } else {
+      link.classList.add("active");
+    }
+  });
+});
+////////////////////////////

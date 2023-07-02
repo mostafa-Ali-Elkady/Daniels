@@ -2,11 +2,25 @@
   .navbar-nav {
     align-items: center;
     background-color: #fff;
-    position:relative;
-    z-index:900;
+    position: relative;
+    z-index: 900;
   }
   .navbar-expand-md .navbar-nav .nav-link {
     color: #000 !important;
     padding-block: 1rem;
+  }
+  .input-group {
+    flex-direction: column;
+  }
+  .input-group > .form-control,
+  .input-group > .form-floating,
+  .input-group > .form-select {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .filtering-item {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
   }
 }

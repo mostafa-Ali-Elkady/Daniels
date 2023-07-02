@@ -7,23 +7,17 @@
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
   </head>
+
   <body>
     <!-- Start Header -->
-    <header
-      class="bg-dark vh-100 text-light header position-relative text-light"
-      id="home"
-    >
+    <header class="bg-dark vh-100 header position-relative" id="home">
       <div class="container">
-        <nav
-          class="navbar navbar-expand-md navbar-default py-md-4 px-md-5"
-          id="nav"
-        >
-          <a
-            class="navbar-brand text-light d-inline-block mont-font"
-            href="#home"
+        <nav class="navbar navbar-expand-md navbar-default" id="nav">
+          <a class="navbar-brand d-inline-block mont-font" href="#home"
             >Daniels</a
           >
           <button
@@ -35,42 +29,37 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars fs-3 text-white"></i>
+            <i class="fa-solid fa-bars fs-3"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item active-item px-2">
-                <a
-                  class="nav-link active text-light"
-                  aria-current="page"
-                  href="#"
-                  >Home</a
-                >
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-light" href="#about">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-light" href="#services">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-light" href="#work">Works</a>
+                <a class="nav-link" href="#work">Works</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-light" href="#blog">Clients</a>
+                <a class="nav-link" href="#testimonials">Clients</a>
               </li>
               <li class="nav-item px-2">
-                <a class="nav-link text-light" href="#blog">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
 
               <li class="nav-item px-2">
-                <a class="nav-link text-light" href="#contact">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </nav>
         <div
-          class="content position-absolute top-50 start-50 translate-middle text-center w-100"
+          class="content text-white position-absolute top-50 start-50 translate-middle text-center w-100"
         >
           <h5>Hello</h5>
           <h1 class="text-uppercase">
@@ -102,12 +91,12 @@
     <section class="about" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-lg-5 mb-5">
             <div class="image ps-5 mb-4 position-relative">
               <img src="imgs/about.jpg" alt="about-me" class="img-fluid" />
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-lg-7">
             <div class="info">
               <h3 class="mont-font fw-bolder">About Me.</h3>
               <p>UI / UX DESIGNER & WEB DEVELOPER</p>
@@ -249,43 +238,122 @@
     <section class="work text-center" id="work">
       <div class="container">
         <h2 class="section-heading h1 mont-font">Portfolio.</h2>
-        <div class="row g-4 mt-4">
-          <div class="filtering my-5">
-            <span class="item active fw-bold m-3" data-filter=" all">All</span>
-            <span class="item fw-bold m-3" data-filter=" brand">Brand</span>
-            <span class="item fw-bold m-3" data-filter=" design">Design</span>
-            <span class="item fw-bold m-3" data-filter=" graphic">Graphic</span>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="image">
-              <img src="imgs/portfolio/1.jpg" alt="image-1" class="img-fluid" />
+        <div class="filtering my-5">
+          <span class="filtering-item active fw-bold" data-filter="all"
+            >All</span
+          >
+          <span class="filtering-item fw-bold" data-filter="brand">Brand</span>
+          <span class="filtering-item fw-bold" data-filter="design"
+            >Design</span
+          >
+          <span class="filtering-item fw-bold" data-filter="graphic"
+            >Graphic</span
+          >
+        </div>
+        <div class="row g-4 mt-4 filterd-images" id="lightgallery">
+          <a
+            href="imgs/portfolio/1.jpg"
+            class="col-md-6 col-lg-4 image all brand position-relative"
+            ><img src="imgs/portfolio/1.jpg" alt="image-1" class="img-fluid" />
+            <div class="image-overlay text-center">
+              <h6 class="fw-bold text-black-50">Web design</h6>
+              <div class="icons d-flex gap-2">
+                <div class="icon-container">
+                  <i class="fa-solid fa-link-slash"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-searchengin"></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="image">
-              <img src="imgs/portfolio/2.jpg" alt="image-2" class="img-fluid" />
+          </a>
+
+          <a
+            href="imgs/portfolio/2.jpg"
+            class="col-md-6 col-lg-4 image all design position-relative"
+          >
+            <img src="imgs/portfolio/2.jpg" alt="image-2" class="img-fluid" />
+            <div class="image-overlay text-center">
+              <h6 class="fw-bold text-black-50">Web design</h6>
+              <div class="icons d-flex gap-2">
+                <div class="icon-container">
+                  <i class="fa-solid fa-link-slash"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-searchengin"></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="image">
-              <img src="imgs/portfolio/3.jpg" alt="image-3" class="img-fluid" />
+          </a>
+
+          <a
+            href="imgs/portfolio/3.jpg "
+            class="col-md-6 col-lg-4 image all brand position-relative"
+            ><img src="imgs/portfolio/3.jpg" alt="image-3" class="img-fluid" />
+            <div class="image-overlay text-center">
+              <h6 class="fw-bold text-black-50">Web design</h6>
+              <div class="icons d-flex gap-2">
+                <div class="icon-container">
+                  <i class="fa-solid fa-link-slash"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-searchengin"></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="image">
-              <img src="imgs/portfolio/4.jpg" alt="image-4" class="img-fluid" />
+          </a>
+
+          <a
+            href="imgs/portfolio/4.jpg"
+            class="col-md-6 col-lg-4 image all design position-relative"
+          >
+            <img src="imgs/portfolio/4.jpg" alt="image-4" class="img-fluid" />
+            <div class="image-overlay text-center">
+              <h6 class="fw-bold text-black-50">Web design</h6>
+              <div class="icons d-flex gap-2">
+                <div class="icon-container">
+                  <i class="fa-solid fa-link-slash"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-searchengin"></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="image">
-              <img src="imgs/portfolio/5.jpg" alt="image-5" class="img-fluid" />
+          </a>
+
+          <a
+            href="imgs/portfolio/5.jpg"
+            class="col-md-6 col-lg-4 image all design position-relative"
+            ><img src="imgs/portfolio/5.jpg" alt="image-5" class="img-fluid" />
+            <div class="image-overlay text-center">
+              <h6 class="fw-bold text-black-50">Web design</h6>
+              <div class="icons d-flex gap-2">
+                <div class="icon-container">
+                  <i class="fa-solid fa-link-slash"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-searchengin"></i>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="image">
-              <img src="imgs/portfolio/6.jpg" alt="image-6" class="img-fluid" />
+          </a>
+
+          <a
+            href="imgs/portfolio/6.jpg"
+            class="col-md-6 col-lg-4 image all graphic position-relative"
+            ><img src="imgs/portfolio/6.jpg" alt="image-6" class="img-fluid" />
+            <div class="image-overlay text-center">
+              <h6 class="fw-bold text-black-50">Web design</h6>
+              <div class="icons d-flex gap-2">
+                <div class="icon-container">
+                  <i class="fa-solid fa-link-slash"></i>
+                </div>
+                <div class="icon-container">
+                  <i class="fa-brands fa-searchengin"></i>
+                </div>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -501,7 +569,7 @@
             </div>
           </div>
         </div>
-        <form action="" class="mt-5">
+        <form action="" class="mt-5 px-3">
           <div class="input-group gap-3 my-4">
             <input type="text" placeholder="name" class="form-control" />
             <input type="email" placeholder="Email" class="form-control" />
@@ -526,6 +594,7 @@
     <script src="js/all.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/typed.umd.js"></script>
+    <script src="js/lightgallery.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
