@@ -1,8 +1,9 @@
 // Start Typing
 var typed = new Typed(".element", {
   strings: ["Developer", "Designer", "Larry Daniels"],
-  typeSpeed: 60,
-  backSpeed: 60,
+  typeSpeed: 100,
+  backSpeed: 30,
+  wordDelay: 500,
   smartBackspace: true,
   loop: true,
   loopCount: Infinity,
