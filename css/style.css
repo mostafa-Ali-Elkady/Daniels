@@ -108,7 +108,7 @@ header {
 }
 .navbar.scrolled a,
 .navbar-nav.scrolled .nav-link.active,
-.navbar-nav.scrolled .nav-link.show {
+.navbar-nav.scrolled .nav-link.show, .navbar-nav.scrolled .nav-link{
   color: var(--black);
 }
 /* .nav-link:hover */
