@@ -5,6 +5,9 @@
     position: relative;
     z-index: 900;
   }
+  .nav-link {
+    color:#000
+  }
   .input-group {
     flex-direction: column;
   }
